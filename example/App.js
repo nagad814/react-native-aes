@@ -9,8 +9,11 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button
 } from 'react-native';
+
+import { generateSalt, pinHash } from './hash'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -33,6 +36,17 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+
+        <Button
+          onPress={generateSalt}
+          title="Generate Salt"
+          color="#841584"
+        />
+        <Button
+          onPress={()=>pinHash("00000", "VoFbF9mMXEpFyJjwjMHVBQ==")} // db11e5512204d905 // key db11e5512204d905
+          title="Pin hash"
+          color="red"
+        />
       </View>
     );
   }
