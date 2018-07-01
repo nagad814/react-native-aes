@@ -4,3 +4,9 @@ ios/RCTAes.xcodeproj/project.xcworkspace/*
 android/.idea/*
 android/.gradle/*
 android/build/*
+example/node_modules
+example/ios/RCTAes.xcodeproj/xcuserdata/*
+example/ios/RCTAes.xcodeproj/project.xcworkspace/*
+example/android/.idea/*
+example/android/.gradle/*
+example/android/build/*
